@@ -24,11 +24,11 @@ input {
     color: var(--black);
 }
 
-.container {
+.container, .main-container {
     display: flex;
     gap: 3px;
 }
 
-.container > *::after {
+:is(.container, .main-container) > *::after {
     content: "\A";
 }
