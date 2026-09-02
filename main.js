@@ -1,6 +1,6 @@
 for (const input of document.querySelectorAll('input')) {
     const { name } = input;
-    const nameText = name.replace(/-/g, match => ' ');
-    const innerText = `Please enter the ${nameText)}`;
-    input.innerText = innerText;
+    const replacedName = name.replace(/-/g, match => ' ');
+    const placeholderInnerText = `Please enter the ${replacedName)}`;
+    input.placeholder.innerText = placeholderInnerText;
 }
