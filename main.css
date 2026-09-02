@@ -36,3 +36,13 @@ input {
 :is(.container, .main-container) > *::after {
     content: "\A";
 }
+
+.copy-button {
+    &[data-is-copied="false"] {
+        background-color: var(--blue);
+    }
+
+    &[data-is-copied="true"] {
+        background-color: var(--green);
+    }
+}
