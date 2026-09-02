@@ -22,6 +22,10 @@ input {
     padding: 12px;
     background-color: var(--white);
     color: var(--black);
+
+    &::placeholder {
+        color: var(--gray);
+    }
 }
 
 .container, .main-container {
