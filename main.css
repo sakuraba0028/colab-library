@@ -1,0 +1,34 @@
+:root {
+    --white: #FFFFFF;
+    --gray: #6C757D;
+    --black: #343A40;
+    --green: #28A745;
+    --blue: #007BFF;
+}
+
+button, input {
+    border-radius: 6px;
+}
+
+button {
+    border: none;
+    padding: 15px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+input {
+    border: 3px solid var(--black);
+    padding: 12px;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.container {
+    display: flex;
+    gap: 3px;
+}
+
+.container > *::after {
+    content: "\A";
+}
