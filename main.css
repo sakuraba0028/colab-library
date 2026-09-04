@@ -30,11 +30,8 @@ input {
 
 .container, .main-container {
     display: flex;
+    flex-direction: column;
     gap: 3px;
-}
-
-:is(.container, .main-container) > *::after {
-    content: "\A";
 }
 
 .copy-button {
