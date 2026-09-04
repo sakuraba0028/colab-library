@@ -13,7 +13,7 @@ const outputConsoleLog = log => {
 
 for (const input of document.querySelectorAll('input')) {
     const { name } = input;
-    const replacedName = name.replace(/-/g, match => ' ');
-    const placeholder = `Please enter the ${replacedName)}`;
-    input.placeholder = placeholderInnerText;
+    const replacedName = name.replace(/-/g, () => ' ');
+
+    if (!input.placeholder) input.placeholder = `Please enter the ${replacedName}`;
 }
