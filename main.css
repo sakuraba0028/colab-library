@@ -4,9 +4,11 @@
     --black: #343A40;
     --green: #28A745;
     --blue: #007BFF;
+
+    --border: 3px solid var(--black);
 }
 
-button, input {
+button, input[type="text"], select {
     border-radius: 6px;
 }
 
@@ -17,8 +19,8 @@ button {
     color: var(--white);
 }
 
-input {
-    border: 3px solid var(--black);
+input[type="text"] {
+    border: var(--border);
     padding: 12px;
     background-color: var(--white);
     color: var(--black);
@@ -28,8 +30,14 @@ input {
     }
 }
 
+select {
+    border: var(--border);
+    padding: 11px;
+}
+
 .container {
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
     gap: 3px;
 }
