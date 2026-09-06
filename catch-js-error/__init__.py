@@ -1,3 +1,5 @@
+print("hello")
+
 import google.colab.output
 
 def catch_js_error(err):
