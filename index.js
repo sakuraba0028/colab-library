@@ -10,7 +10,7 @@ const humanize = (str, isCapitalized = true) => {
     }
 };
 
-const initElement = ( 
+const initElement = {
     const initForm = () => {
         for (const form of document.querySelectorAll('form')) {
             form.addEventListener('click', e => e.preventDefault());
